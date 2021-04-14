@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <header>
+      <h1>Ruby on Railsスケジュール管理アプリ</h1>
+    </header>
     <%= yield %>
+    <footer>
+          <h1>現在の日付:<%= Date.current.strftime("%Y年%m月%d日") %></h1>
+    </footer>
   </body>
 </html>
